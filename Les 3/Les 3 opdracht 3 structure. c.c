@@ -11,7 +11,7 @@ int main()
         {
             char naam[50];
             int instroomjaar;
-        } oopleiding;
+        } opleiding1;
         
 
     };
@@ -28,17 +28,17 @@ int main()
         scanf("%d", &lijst[num].leeftijd);
 
         printf("Geef opleiding naam: ");
-        scanf("%s", lijst[num].oopleiding.naam);
+        scanf("%s", lijst[num].opleiding1.naam);
 
         printf("Geef instroomjaar: ");
-        scanf("%d", &lijst[num].oopleiding.instroomjaar);
+        scanf("%d", &lijst[num].opleiding1.instroomjaar);
 
         printf("\n");
     }
 
     for (num = 0; num < 2; num++)
     {
-        printf("%s\n%d\n%s\n%d\n\n", lijst[num].naam, lijst[num].leeftijd, lijst[num].oopleiding.naam, lijst[num].oopleiding.instroomjaar);
+        printf("%s\n%d\n%s\n%d\n\n", lijst[num].naam, lijst[num].leeftijd, lijst[num].opleiding1.naam, lijst[num].opleiding1.instroomjaar);
     }
 
     return 0;
