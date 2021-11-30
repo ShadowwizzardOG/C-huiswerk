@@ -1,23 +1,28 @@
 #include <stdio.h>
-#include "hello.h"
+void print_function( char letter );
+int ctr;
+int num;
 
-int main() 
+int mainvaneen( void )
 {
-    int a;
-    printf("Kies 1, 2 of 3: ");
-    scanf("%d",&a);
-    if (a < 0)
-    {
-        return(0);
-    }
+   for ( num = 0 ; num < 10; num++ )
+   {
+      char star = '*';
+      char dash = '-';
+      for (ctr = 0 ; ctr < 10; ctr++ )
+      {
+         print_function( star );
+         print_function( dash );
+         printf("\n");
+      }
+   }
+   return 0;
+}
 
-    if (a == 2)
-    {
-        mainvaneen();
-    }
-    printf("keuze was %d", a);
-
-
-
-    return(0);
+void print_function ( char letter )
+{
+   for ( ctr = 0; ctr < 9; ctr++) 
+   {
+      printf("%c", letter);
+   }
 }
